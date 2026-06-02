@@ -1,0 +1,16 @@
+# Copy to `.dev.vars` for local `wrangler dev`. NEVER commit `.dev.vars`.
+# All values are OPTIONAL — anonymous mode works without any of them.
+#
+# For production, set these with: wrangler secret put <NAME>
+
+# Comma-separated API keys. If set, /v1/* requires Authorization: Bearer <key>.
+# API_KEYS="sk-your-key,sk-another"
+
+# Full Cookie header from a signed-in gemini.google.com session (enables Pro routing).
+# COOKIE="SID=...; HSID=...; SSID=...; APISID=...; SAPISID=...; __Secure-1PSID=..."
+
+# Page XSRF token (SNlM0e from the rendered Gemini page).
+# XSRF_TOKEN="AOOh0P..."
+
+# Google account index, matching the /u/<index>/ part of the Gemini URL.
+# AUTH_USER="1"

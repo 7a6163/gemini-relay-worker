@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gemini-relay-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "observability": {
+    "enabled": true
+  },
+  // Non-sensitive config. Sensitive values (COOKIE, XSRF_TOKEN, API_KEYS,
+  // AUTH_USER) go in .dev.vars locally and `wrangler secret put` in prod.
+  "vars": {
+    // Date-stamped Gemini build label — Google rotates it; refresh if requests start failing.
+    "GEMINI_BL": "boq_assistant-bard-web-server_20260525.09_p0",
+    "DEFAULT_MODEL": "gemini-3.5-flash",
+    "REQUEST_TIMEOUT_SEC": "180"
+  }
+}
