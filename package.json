@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Cloudflare Worker port of gemini-web2api",
+  "license": "MIT",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
